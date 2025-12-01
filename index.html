@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .center-text {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .play-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Updated audio file name -->
+    <audio id="myAudio" src="manor_sounds.wav"></audio>
+
+    <div class="center-text">
+        <p>There is a lake here. You are, seemingly, already standing in it.</p>
+        <p>You have been standing in this lake for a long, long time,  and some time after that.</p>
+    </div>
+
+    <!-- Updated button text -->
+    <button class="play-button" onclick="document.getElementById('myAudio').play()">Click to hear sound</button>
+
+</body>
+</html>
